@@ -1,2 +1,3 @@
 # Paper
-Some notes when reading paper
+Interesting Papers, Books, Talks and Courses.
+Also my notes.
