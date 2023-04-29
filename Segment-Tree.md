@@ -22,7 +22,7 @@ For range query, do sum[r]-sum[l]. To update, update all values after i.
 - time complexity: O(1) O(n)
 - space complexity: O(n), in fact O(2n)
 ### With Segment Tree
-- [HDU-3308 LCIS](https://blog.csdn.net/Silenceneo/article/details/52097428) - [Solution](https://www.cnblogs.com/BIGTOM/p/8493581.html)  
+- [HDU-3308 LCIS](https://blog.csdn.net/Silenceneo/article/details/52097428) - [Solution](https://blog.csdn.net/Silenceneo/article/details/52097428)  
 - [Leetcode 53. Maximum Subarray](https://leetcode.cn/problems/maximum-subarray/)
 - time complexity: O(log(n)) O(log(n))
 - space complexity: O(n), in fact O(2n-1)
