@@ -7,7 +7,7 @@ It is a full-binary tree.
 The internal nodes contain range as well as sum of range.
 The internal nodes is non-overlapped.  
 The leaf node contains real values of array.  
-![segment-tree](https://github.com/vinland-avalon/Readings/blob/master/images/segment-tree1.png?raw=true)
+![segment-tree](https://github.com/vinland-avalon/Readings/blob/main/images/segment-tree1.png?raw=true)
 ## How to Do Range Query and Value Update?
 ### Definition
 We have an array arr[0 . . . n-1]. We should be able to:  

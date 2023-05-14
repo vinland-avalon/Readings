@@ -22,7 +22,7 @@ There are bitmaps to skip gaps.
 ## Internal Node
 Each Internal Node contains a linear regression model, as well as an array of pointers pointing to child nodes.  
 Unlike [1], which is to seperate next layer equally, the main purpose of Internal Node in ALEX is to gather data that is almost linear in one child node and seperate data with different distribution (non-linear) in different child nodes.
-![internal_nodes](https://github.com/vinland-avalon/Readings/blob/master/images/ALEX_Internal_Nodes.png?raw=true)
+![internal_nodes](https://github.com/vinland-avalon/Readings/blob/main/images/ALEX_Internal_Nodes.png?raw=true)
 # Algorithms (lookups, range query, insert, delete, out of bounds insert, bulk load)
 ## Lookups and Range Queries
 ## Insert in non-full nodes

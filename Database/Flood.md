@@ -10,5 +10,5 @@ Title: [Learning Multi-dimensional Indexes](https://arxiv.org/pdf/1912.01668v1.p
 - 
 # How does it work
 ## Query Operation
-![Flood_Query](https://github.com/vinland-avalon/Readings/blob/master/images/Flood_Query.png?raw=true)
+![Flood_Query](https://github.com/vinland-avalon/Readings/blob/main/images/Flood_Query.png?raw=true)
 Attention: the data inside cell is only sorted by dth-dimension.

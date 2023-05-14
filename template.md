@@ -6,6 +6,6 @@ Title: []()
 - 
 - 
 # How does it work
-![segment-tree](https://github.com/vinland-avalon/Readings/blob/master/images/segment-tree1.png?raw=true)
+![segment-tree](https://github.com/vinland-avalon/Readings/blob/main/images/segment-tree1.png?raw=true)
 
 
