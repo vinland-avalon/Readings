@@ -4,7 +4,6 @@ Title: [Tsunami: A Learned Multi-dimensional Index for Correlated Data and Skewe
 - Extend of [Flood](https://arxiv.org/abs/1912.01668)[1]
 - *skewed query* A lightweight decision tree, named `Grid tree`, to partition better
 - *correlated dimensions* `Augmented tree`, which use two techniques - *functional mappings* and *conditional CDFs*
-
 # How does it work
 ## Pre-requisite
 ### Flood
