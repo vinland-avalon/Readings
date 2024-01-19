@@ -49,7 +49,7 @@ docker image ls # which is equal to docker imgages
 sudo docker rmi -f $(sudo docker images -aq)
 sudo docker-compose -f cs511p1-compose.yaml up
 sudo docker run hello-world
-dockerd
+dockerd 
 echo "worker2" >> /opt/hadoop/etc/hadoop/workers
 ```
 
