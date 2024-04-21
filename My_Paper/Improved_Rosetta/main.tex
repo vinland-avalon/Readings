@@ -1,0 +1,89 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{setspace}
+\usepackage{biblatex}
+\addbibresource{references.bib}
+\singlespacing
+
+% Optional packages
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Improved Rosetta with Priority-Driven Traversal for Efficient Long-Range Queries}
+\author{Bohan Wu}
+\date{April 20th, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Modern data sets are large and growing at increasing rates. So efficient approaches to filter data, which help to reduce scans, are getting more and more important these days. This is especially important for databases that utilize LSM-tree storage, such as MyRocks\cite{matsunobu2020myrocks} since there will overlapped data in SSTs. The database community has explored Bloom Filters (BFs) for many years and proposed many innovations to adapt them to different workloads. This proposal is motivated by the need to enhance long-range query performance in Rosetta\cite{luo2020rosetta}. Based on critiques of the Rosetta and SuRF\cite{zhang2018surf} methodologies, this work aims to address the inefficiencies observed in Rosetta’s handling of long-range queries by introducing a priority-driven traversal mechanism.
+
+\section{Review of Existing Work}
+Rosetta is one of the best adaptions of BF to handle point- and range-query in a unified way. A Rosetta instance uses a hierarchical set of Bloom filters. The k-level bloom filter is responsible for the probation of first k digits of keys.  During the range query, there will be a DFS-based traversal and whenever find positive result in a leaf node, it indicates that the output of this range query is positive.   
+
+It is good at short range query. However, for long range queries, which is more likely to contain target keys, other technologies such as SuRF have superior performance. There are two reasons for the poor performance. First, Rosetta can only conclude each query after reaching the deepest leaf nodes, while SuRF only makes conclusions based on the prefix. Second, once the current leaf indicates negative results, Rosetta will turn to next leaf node, until one leaf outputs positive or all leaves output negative. 
+
+\section{Research Questions}
+\begin{itemize}
+    \item How can Rosetta be optimized to handle both two types of query workloads effectively?
+    \item Can we integrate additional data structures, like CDF model, into the Rosetta model's traversal process to improve the efficiency of long-range queries?
+    \item What is the impact of using a CDF on the False Positive Rate and time cost in comparison to the original Rosetta and SuRF models?
+    \item If evaluations show that a CDF introduces excessive maintenance overhead, could a piecewise CDF mitigate this issue?
+\end{itemize}
+
+
+\section{Methodology}
+This optimization will incorporate a Cumulative Distribution Function (CDF) that represents the density of keys within specific ranges appearing in a sorted dataset. During the traversal of the Rosetta model, each non-leaf node will prioritize its subtrees based on their likelihood of containing target keys, as calculated by the CDF. Then the traversal goes in the order of the priority, instead of straightforward DFS. This ranking aims to expedite the discovery of positive keys, if present.  
+
+Additionally, a piecewise CDF may also be utilized to enhance this process. The piecewise CDF, derived from the traditional CDF, requires fewer parameters to describe the data distribution while maintaining an acceptable error bound. This methodological adaptation is expected to significantly improve query efficiency by optimizing the traversal path within the hierarchical Bloom filter structure.  
+
+The following details the pseudo-code for the optimized traversal process in the Rosetta model.
+
+\begin{algorithm}
+\caption{Priority-Driven Traversal Using CDF in Rosetta Model}
+\begin{algorithmic}[1]
+\Procedure{PriorityDrivenTraversal}{$node, queryRange$}
+    \If{$node.isLeaf()$}
+        \State \Return $node.query(queryRange)$
+    \Else
+        \State $subtrees \gets node.getChildren()$
+        \State $cdfValues \gets \text{calculateCDF}(subtrees, queryRange)$
+        \State $sortedSubtrees \gets \text{sortSubtreesByCDF}(subtrees, cdfValues)$
+        \For{$subtree$ in $sortedSubtrees$}
+            \State $result \gets \Call{PriorityDrivenTraversal}{subtree, queryRange}$
+            \If{$result$ contains positive}
+                \State \Return $result$
+            \EndIf
+        \EndFor
+        \State \Return negative
+    \EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\section{Experiment}
+For datasets, like previous works, I will also generate YCSB\cite{cooper2010benchmarking} key-value work- loads that are variations of Workload E, a majority range scan workload modeling a web application use case [18].  
+
+I will first conduct experiment to assess the lookup performance of the improved Rosetta model against the original and SuRF. The primary metrics will be time cost and False Positive Rate across a spectrum of 'bits per key' and 'range query sizes'. Subsequently, the storage costs associated with implementing a CDF or piecewise CDF will be evaluated, focusing on the overhead and efficiency during updates. Finally, different configurations of the CDF model size and parameters will be tested to determine their impact on system performance and accuracy. \\
+
+
+
+
+% Use the following lines if you have references
+% \bibliographystyle{apa} % Choose the style you want here.
+% \bibliography{references}
+\begin{refcontext}[sorting = none]
+\printbibliography
+\end{refcontext}
+
+
+
+\end{document}
