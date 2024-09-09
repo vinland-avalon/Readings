@@ -23,3 +23,16 @@ Some questions may worth discussing:
 This might be a dummy question, but while "When Do Words Matter" proposes an automated solution—meaning no manual annotation is needed—can it really be used to determine the effect of word choice? In the experiment, gender is an objective annotation for tweets, but what if I want to understand how changing {word A to word B} affects perceptions of age, status, or race?
 
 The second paper explores how different words affect propagation. However, I'm unsure whether platform-related factors were considered, such as search engine and recommendation system preferences. Could these have influenced the results?
+
+# Interactions with Text
+## Source
+Mark Bernstein. 2009. On hypertext narrativeLinks to an external site.. In Proceedings of the 20th ACM conference on Hypertext and hypermedia (HT ‘09).
+Craig S. Tashman and W. Keith Edwards. 2011. LiquidText: a flexible, multitouch environment to support active readingLinks to an external site.. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ‘11).
+## Reflection
+Both papers focus on interactions with text in the context of modern technologies. The first paper identifies the incoherence in hyperlinks for narratives and then describes how a generalized implementation of stretchtext can resolve this issue. The "LiquidText" paper proposes an active reading (AR) system that enables various advanced interactions, enhancing the reading experience, especially on multi-touch devices.
+
+Some questions worth discussing:
+
+1. With larger or even multiple screens available (for PCs and phones, as nearly everyone has both a laptop and a phone), is it possible to use multiple displays to replace in-place stretchtext?
+
+2. According to the demo, it seems that a very large screen is necessary; otherwise, everything becomes inconvenient. However, a bigger screen presents new challenges. First, popular multi-touch devices like iPads are not large enough. Second, a bigger screen is no longer portable, which could significantly reduce people's interest in reading. Imao, I even prefer pure reading, which may at most supports highlighting and annotations.
