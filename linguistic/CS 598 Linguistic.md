@@ -1,6 +1,6 @@
 # Linguistic Accommodation
 ## Source
-Cristian Danescu-Niculescu-Mizil, Michael Gamon, and Susan Dumais. 2011. Mark my words! linguistic style accommodation in social mediaLinks to an external site.. In Proceedings of the 20th international conference on World wide web
+Cristian Danescu-Niculescu-Mizil, Michael Gamon, and Susan Dumais. 2011. Mark my words! linguistic style accommodation in social mediaLinks to an external site.. In Proceedings of the 20th international conference on World wide web  
 Fusaroli R, Bahrami B, Olsen K, Roepstorff A, Rees G, Frith C, Tylén K. 2012. Coming to terms: quantifying the benefits of linguistic coordinationLinks to an external site.. Psychology Society.
 ## Reflection
 Both papers focus on linguistic accommodation (convergence, alignment, etc.) but analyze it from different perspectives. "Mark My Words" aims to verify this phenomenon in the real world using a large-scale dataset, while "Coming to Terms" explores its effect on cooperative performance. The former study implements a "large-scale, real-world setting" by analyzing Twitter conversations and proposes a novel probabilistic framework to distinguish accommodation from other effects. The latter study involves in-person experiments, assessing the alignment of linguistic practices, success in cooperation, and their correlations. Together, these two papers provide a foundational but comprehensive view of linguistic accommodation. Additionally, both studies employ quantitative analysis, offering valuable insights.
@@ -13,7 +13,7 @@ Could we develop prompts or fine-tune LLMs to make them more inclined to align w
 
 # Lexical Choice
 ## Source
-Zhao Wang and Aron Culotta. 2019. When do words matter? understanding the impact of lexical choice on audience perception using individual treatment effect estimationLinks to an external site.. In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence
+Zhao Wang and Aron Culotta. 2019. When do words matter? understanding the impact of lexical choice on audience perception using individual treatment effect estimationLinks to an external site.. In Proceedings of the Thirty-Third AAAI Conference on Artificial Intelligence  
 Chenhao Tan, Lillian Lee, and Bo Pang. 2014. The effect of wording on message propagation: Topic- and author-controlled natural experiments on TwitterLinks to an external site.. In Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics.
 ## Reflection
 Both papers focus on how the smallest unit of language—words—affect text. "When Do Words Matter" investigates automated methods that estimate how a specific lexical choice (changing one word to another) affects perception and compared to empirical approaches RCTs, this newly proposed ITE estimation can be scaled more easily. The second paper conducted a large-scale experiment on Twitter, where, surprisingly, many pairs of tweets containing the same URL and written by the same user but using different wording were found, and it concluded that certain words do attract more attention.
@@ -26,7 +26,7 @@ The second paper explores how different words affect propagation. However, I'm u
 
 # Interactions with Text
 ## Source
-Mark Bernstein. 2009. On hypertext narrativeLinks to an external site.. In Proceedings of the 20th ACM conference on Hypertext and hypermedia (HT ‘09).
+Mark Bernstein. 2009. On hypertext narrativeLinks to an external site.. In Proceedings of the 20th ACM conference on Hypertext and hypermedia (HT ‘09).  
 Craig S. Tashman and W. Keith Edwards. 2011. LiquidText: a flexible, multitouch environment to support active readingLinks to an external site.. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ‘11).
 ## Reflection
 Both papers focus on interactions with text in the context of modern technologies. The first paper identifies the incoherence in hyperlinks for narratives and then describes how a generalized implementation of stretchtext can resolve this issue. The "LiquidText" paper proposes an active reading (AR) system that enables various advanced interactions, enhancing the reading experience, especially on multi-touch devices.
@@ -36,3 +36,16 @@ Some questions worth discussing:
 1. With larger or even multiple screens available (for PCs and phones, as nearly everyone has both a laptop and a phone), is it possible to use multiple displays to replace in-place stretchtext?
 
 2. According to the demo, it seems that a very large screen is necessary; otherwise, everything becomes inconvenient. However, a bigger screen presents new challenges. First, popular multi-touch devices like iPads are not large enough. Second, a bigger screen is no longer portable, which could significantly reduce people's interest in reading. Imao, I even prefer pure reading, which may at most supports highlighting and annotations.
+
+# Interactive Paper
+## Source
+Pierre Dragicevic, Yvonne Jansen, Abhraneel Sarma, Matthew Kay, and Fanny Chevalier. 2019. Increasing the Transparency of Research Papers with Explorable Multiverse AnalysesLinks to an external site.. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ‘19).  
+Hohman, Fred & Conlen, Matthew & Heer, Jeffrey & Chau, Polo. 2020. Communicating with Interactive ArticlesLinks to an external site.. Distill.
+## Reflection
+The first paper proposed the "explorable multiverse analysis report (EMAR)" to provide a better way to present research evaluation results and finally increase transparency through "multiverse analysis." It is actually to allow readers to explore large-scale or specific evaluation results interactively without disrupting their reading experience. The second paper is presented as an interactive document, discussing ideas such as "Connecting People and Data," "Making Systems Playful," "Prompting Self-Reflection," "Personalizing Reading," and "Reducing Cognitive Load." Both papers provide detailed examples, which is good to learn from.  
+ 
+Questions worth discussing:  
+
+1. I really appreciate the first work, but I also expect some tools to enhance it. For example, if I find a set of parameters that lead to an interesting result but have not written them down, will it be easy to retrieve it later?
+
+2. Compared to traditional papers, interactive text does not adhere to strict standards. Could this cause inconvenience in some scenarios, such as reviewing and printing? How can we ensure coherence between the interactive text version and the printed version?
