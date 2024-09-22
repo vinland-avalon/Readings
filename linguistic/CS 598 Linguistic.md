@@ -49,3 +49,15 @@ Questions worth discussing:
 1. I really appreciate the first work, but I also expect some tools to enhance it. For example, if I find a set of parameters that lead to an interesting result but have not written them down, will it be easy to retrieve it later?
 
 2. Compared to traditional papers, interactive text does not adhere to strict standards. Could this cause inconvenience in some scenarios, such as reviewing and printing? How can we ensure coherence between the interactive text version and the printed version?
+
+# Creative Interactions
+## Source 
+Qian Yang, Justin Cranshaw, Saleema Amershi, Shamsi T. Iqbal, and Jaime Teevan. 2019. Sketching NLP: A Case Study of Exploring the Right Things To Design with Language IntelligenceLinks to an external site.. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ‘19).
+Minsuk Chang, Stefania Druga, Alexander J. Fiannaca, Pedro Vergani, Chinmay Kulkarni, Carrie J Cai, and Michael Terry. 2023. The Prompt ArtistsLinks to an external site.. In Proceedings of the 15th Conference on Creativity and Cognition (C&C ‘23).
+## Reflection
+Both papers focus on the creative interaction between designers and AI models. "Sketching NLP" did research on how developers can sketch NLP-related systems/applications/user experience in a more efficient way. It proposes 1) a "notebook" that functions similarly to traditional wireframes, to abstract language interactions 2) as well as solutions to other problems during different stages of designing. "The Prompt Artist" reveals several phenomena for text-to-image models' output and the artists. According to this work, prompts, prompt templates and even model glitches can all be regarded as "art", which is romantic.
+
+Questions may worth discussing:
+1. "Sketching" aims to provide solutions when designing a NLP interaction system, which all make sense. However, Could there be an example of how to apply these solutions or advice?
+2. The prompts are model-specific. So when saying "prompt as art", should we also specify the TTI model used?
+3. The conlusions of second paper are summarized from interviewers' reponses. Could there be a quantitative way to achieve that?
