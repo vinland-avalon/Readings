@@ -4,7 +4,8 @@ SIGMOD ’22
 Tsinghua University: Guoliang Li, Chao Zhang
 ## HTAP Databases
 ![htap-databases](https://github.com/vinland-avalon/Readings/blob/main/images/htap-databases.png?raw=true)  
-Notice, from my understanding, this kind of taxonomy is not exclusive. It's more like several classic cases.
+![htap-technologies](https://github.com/vinland-avalon/Readings/blob/main/images/htap-technologies.png?raw=true)  
+Notice, from my understanding, this kind of category is not exclusive. It's more like several classic cases.
 ### a) Primary Row Store+In-Memory Column Store
 #### Examples
 - Oracle Database In-Memory: A Dual Format In-Memory Database
@@ -34,5 +35,13 @@ Utilizes a disk-based RDBMS with a distributed in-memory column-store (IMCS). No
 - Efficient Transaction Processing in SAP HANA Database: The End of A Column Store Myth.
 #### SAP HANA
 It divides the in-memory data store into three layers: L1-delta, L2-delta, and Main. The L1-delta keeps data updates in a row-wise format. When the threshold is reached, the data in L1- delta is appended to L2-delta. The L2-delta transforms the data into columnar data, then merges the data into the main column store. Finally, the columnar data is persisted to the disk storage.
+
+## HTAP Technologies
+![htap-technologies-2](https://github.com/vinland-avalon/Readings/blob/main/images/htap-technologies-2.png?raw=true)  
+
+## HTAP Benchmarks
+- CH-benchmark. End-to-end. TPC-C (transaction workload) + TPC-H (analytical workload) 
+- HTAPBench. Also combines TPCC and TPCH, but with different metrics.
+
 
 
