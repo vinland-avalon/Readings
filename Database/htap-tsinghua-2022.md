@@ -41,7 +41,17 @@ It divides the in-memory data store into three layers: L1-delta, L2-delta, and M
 
 ## HTAP Benchmarks
 - CH-benchmark. End-to-end. TPC-C (transaction workload) + TPC-H (analytical workload) 
-- HTAPBench. Also combines TPCC and TPCH, but with different metrics.
+- HTAPBench. Also combines TPCC and TPCH, but with different metrics
+
+
+# Chores about HTAP (But not this paper)
+## [How to deal with queries not on primary key or sort key for column store](https://chatgpt.com/share/66f21ec5-3770-800c-8b92-4d9c300664d0)
+-  Full Column Scan
+- Zone Maps / Min-Max Indexes
+- Secondary Indexes (may be implemented with separate B-tree, sparse index, bitmap index, etc.). ClickHouse, Vertica, or SAP HANA
+- Bitmap Indexes: kind of like invert index, for low-cardinality data. Vertica or Druid
+- Late Materialization. MonetDB. Do filter first and only read necessary columns. Delay row construction. Intuitive now.
+
 
 
 
