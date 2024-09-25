@@ -61,3 +61,18 @@ Questions may worth discussing:
 1. "Sketching" aims to provide solutions when designing a NLP interaction system, which all make sense. However, Could there be an example of how to apply these solutions or advice?
 2. The prompts are model-specific. So when saying "prompt as art", should we also specify the TTI model used?
 3. The conlusions of second paper are summarized from interviewers' reponses. Could there be a quantitative way to achieve that?
+
+# NLP evaluation
+## Source
+Elizabeth Clark, Tal August, Sofia Serrano, Nikita Haduong, Suchin Gururangan, and Noah A. Smith. 2021. All That’s ‘Human’ Is Not Gold: Evaluating Human Evaluation of Generated TextLinks to an external site.. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics
+Marco Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin, and Sameer Singh. 2020. Beyond Accuracy: Behavioral Testing of NLP Models with CheckListLinks to an external site.. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics.
+## Reflection
+Both papers focus on the evaluation of NLP models. The first paper concludes that people can hardly distinguish machine-generated content, even after simple training, based on experimental results. Thus it reminds researchers to be cautious when using human evaluation as the gold standard or a definitive solution. The second paper, "Beyond Accuracy," introduces CheckList, which resembles "behavior testing" or "black-box testing" and is task-agnostic.  
+
+Some questions that might be worth discussing:  
+
+1. In the first paper, the experiment limits content to 100 words. Given that I still don't believe ChatGPT can write something like "The Gift of the Magi," is it worth investigating how human evaluation accuracy changes with text length?
+
+2. The conclusion of the first paper is somewhat scary—does this imply that the Turing test is now outdated?
+
+3. The checklist can only deal with scenarios that can be enumerated. Is there any way to extend it to open-minded questions?
