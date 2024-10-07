@@ -76,3 +76,18 @@ Some questions that might be worth discussing:
 2. The conclusion of the first paper is somewhat scary—does this imply that the Turing test is now outdated?
 
 3. The checklist can only deal with scenarios that can be enumerated. Is there any way to extend it to open-minded questions?
+
+# augment scientific paper reading
+## Source
+Andrew Head, Kyle Lo, Dongyeop Kang, Raymond Fok, Sam Skjonsberg, Daniel S. Weld, and Marti A. Hearst. 2021. Augmenting Scientific Papers with Just-in-Time, Position-Sensitive Definitions of Terms and SymbolsLinks to an external site.. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI ‘21).
+Kyle Lo, et al. 2023. The semantic reader project: Augmenting scholarly documents through ai-powered interactive reading interfacesLinks to an external site.. CACM.
+## Reflection
+The first paper proposed a tool named "ScholarPhi" to provide explanation and reference for nonce words (including some terms, symbols and equations) in scientfic paper. The second work is a collection of work (AKA Semantic Reader Project) about how to utilze AI to enhance reading scientific papers, including Discovery, Efficiency, Comprehension, Synthesis and Accessibility and corresponding systems like CiteSee, Scim and also ScholarPhi, which is proposed in the first paper.
+
+Questions may worth discussion:
+
+1. The second work introduced CiteSee as an important part to do discovery. The idea to differentiate citations according to personalization, importance, etc. is appealing. It also reminds me that the citation preview always only shows abstract or summaries but maybe only a small part is related to current paper. Could we extend CiteSee to identify related parts within cited paper?
+
+2. As for training, I didn't see much discussion about generalization among different fields. Will that be a big problem?
+
+3. ScholarPhi will extract the nonce words before reading. To step further, can we have user-defined nonce words for someone new to this field?
