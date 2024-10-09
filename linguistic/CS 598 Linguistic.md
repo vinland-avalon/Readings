@@ -91,3 +91,17 @@ Questions may worth discussion:
 2. As for training, I didn't see much discussion about generalization among different fields. Will that be a big problem?
 
 3. ScholarPhi will extract the nonce words before reading. To step further, can we have user-defined nonce words for someone new to this field?
+
+# Authors and Audience (Personalization)
+## Source
+Taewook Kim, Hyomin Han, Eytan Adar, Matthew Kay, and John Joon Young Chung. 2024. Authors’ Values and Attitudes Towards AI-bridged Scalable Personalization of Creative Language ArtsLinks to an external site.. CHI.  
+Krzysztof Gajos and Daniel S. Weld. 2008. Improving the Performance of Motor-Impaired Users with Automatically-Generated, Ability-Based InterfacesLinks to an external site.. CHI.
+## Reflection
+Reply from Bohan Wu
+The first paper conducted interviews about how AI-bridged creative language arts affects authors' and audiences' received benefits. Its conclusion is fair enough - although AI has potentials to change everything as a third party role in CLA, people or prosumers are still important. One benefit is that AI can personalize each audience's reading experience and the second paper specifically focuses on how such automatic generation can help motor-impaired readers.
+
+Some questions may be worth discussion:
+
+1. For the first paper, the interviewers may have different experiences with AI. Can we take this factor into consideration?
+
+2. I see someone has proposed a really interesting question - which is the better way to collect preference? Yeah, I think that really matters. Some system may collect info from everywhere and some need manually entered info. I think both make sense in some scenarios. When dealing with specific tasks, for example, to help motor-impaired people, entered info can serve as a more accurate and detailed basis. However, when personalizing for general readers, the factors are more complex. So collecting as much info as possible may be a better choice. Like Tiktok or Facebook, nobody knows how they make such accurate recommendations...
