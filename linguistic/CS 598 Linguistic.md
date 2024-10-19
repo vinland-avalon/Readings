@@ -105,3 +105,12 @@ Some questions may be worth discussion:
 1. For the first paper, the interviewers may have different experiences with AI. Can we take this factor into consideration?
 
 2. I see someone has proposed a really interesting question - which is the better way to collect preference? Yeah, I think that really matters. Some system may collect info from everywhere and some need manually entered info. I think both make sense in some scenarios. When dealing with specific tasks, for example, to help motor-impaired people, entered info can serve as a more accurate and detailed basis. However, when personalizing for general readers, the factors are more complex. So collecting as much info as possible may be a better choice. Like Tiktok or Facebook, nobody knows how they make such accurate recommendations...
+
+
+# AI-Mediated 
+## Reflection
+"AI-Mediated Communication" summarized almost everything about AI-MC, including how to define it (where's the boundary), how such technologies are introduced, how it affects or might affect society and communications. The concerns raised in this work are very interesting, which are about self-representation, trustworthiness and false messages. The second paper specifically focuses on what if your writing-assistant (a language model) has its idea and tendencies. The conclusion is alarming—the impact is significant, and most people are unaware of it.
+
+Some questions may be worth discussing:  
+1. The first work uses examples to support its opinions, including one about Duplex's use of "um’s" and "mm-hmm’s." However, I question whether it really matters if we can tell the difference between a bot and a real person. After all, completing the task, or scheduling that meeting in this context, is what really matters.
+2. There may be an intuitive reason for such influence in the second paper's conclusion. The analysis is sentence-level. For a question like "social media's impact", the majority of people do not hold a absolute opinion. Instead, they believe its benefits outweigh the side effects, or vice versa. The auto-completion may just remind them of the opposite opinion which they may be too lazy to include or forget to include without such an assistant. To check whether there's such a factor, there could be analysis of turning point, like "despite all this" in Figure 2.
