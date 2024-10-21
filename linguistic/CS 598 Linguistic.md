@@ -108,6 +108,9 @@ Some questions may be worth discussion:
 
 
 # AI-Mediated 
+## Source
+Jeffrey T Hancock, Mor Naaman, Karen Levy, AI-Mediated Communication: Definition, Research Agenda, and Ethical ConsiderationsLinks to an external site., Journal of Computer-Mediated Communication.
+Maurice Jakesch, Advait Bhat, Daniel Buschek, Lior Zalmanson, and Mor Naaman. 2023. Co-Writing with Opinionated Language Models Affects Users’ ViewsLinks to an external site.. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI ‘23).
 ## Reflection
 "AI-Mediated Communication" summarized almost everything about AI-MC, including how to define it (where's the boundary), how such technologies are introduced, how it affects or might affect society and communications. The concerns raised in this work are very interesting, which are about self-representation, trustworthiness and false messages. The second paper specifically focuses on what if your writing-assistant (a language model) has its idea and tendencies. The conclusion is alarming—the impact is significant, and most people are unaware of it.
 
