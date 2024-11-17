@@ -139,3 +139,16 @@ Some questions may be worth discussing:
 1. The meaning of "quality" in "Sparks" paper is interseting - sometimes a randomly-generated text can also be regarded as high-quality. Can there be some further research for this part? For example, in which scenarios user prefer random. I guess they should include "for example...".
 
 2. For the second paper, I'm a little confused about "skip prompts". Given that writers could choose to skip prompts, would this choice affect the balance of the dataset across different writing tasks and prompts?
+
+## Norm Shifts
+## Source
+Eva Sharma and Munmun De Choudhury. 2018. Mental Health Support and its Relationship to Linguistic Accommodation in Online CommunitiesLinks to an external site.. CHI
+Cristian Danescu-Niculescu-Mizil, Robert West, Dan Jurafsky, Jure Leskovec, and Christopher Potts. 2013. No country for old members: user lifecycle and linguistic change in online communitiesLinks to an external site.. In Proceedings of the 22nd international conference on World Wide Web
+## Reflection
+The first work studied how linguistic accommodation impacts the mental health support the authors of posts received. And the authors found there's always a positive link between them. The second paper proposed a framework to track linguistic norm changes. With this framework, they found that for the evolving norms, users would go through a learning phase, followed by a conservative phase, where users gradually get passed by.
+
+Some questions worth discussing:
+
+1. As discussed in the first paper, less conforming posters sometimes receive less support even if they genuinely require immediate attention. And some patients cannot even express their needs well. If we have a LLM-based application or plugin to polish the posts and make them follow the norms, can this problem get mitigated? 
+
+2. Given the first research is conducted on Reddit, does the platforms' algorithms for recommendation system and search engine influence the results? For example, the more confirming posters may gain more exposure?
