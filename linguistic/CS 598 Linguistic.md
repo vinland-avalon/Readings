@@ -152,3 +152,15 @@ Some questions worth discussing:
 1. As discussed in the first paper, less conforming posters sometimes receive less support even if they genuinely require immediate attention. And some patients cannot even express their needs well. If we have a LLM-based application or plugin to polish the posts and make them follow the norms, can this problem get mitigated? 
 
 2. Given the first research is conducted on Reddit, does the platforms' algorithms for recommendation system and search engine influence the results? For example, the more confirming posters may gain more exposure?
+
+# LLM-interaction
+## Source
+Kirk, H. R., Vidgen, B., Röttger, P., & Hale, S. A. (2023). Personalisation within bounds: A risk taxonomy and policy framework for the alignment of large language models with personalised feedbackLinks to an external site.. ArXiv.
+Nikhil Sharma, Q. Vera Liao, and Ziang Xiao. 2024. Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information SeekingLinks to an external site.. In Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI ‘24).
+## Reflection
+The first paper explored how, and in what ways, LLM models should be personalized. The authors proposed i) a taxonomy for benefits and risks, and ii) a policy framework to make LLMs align with users' preference while restraining bad behaviors by introducing tiered restrictions and requirements. The second paper explored whether LLM-based search would impact diverse information seeking. And finally they proved that such search engine would bring more bias and, making matters worse, opinionated LLM would reinforce some bias for users.
+
+Some questions may be worth discussing:
+1. Some LLMs, at least ChatGPT, have a parameter - "temperature" - to control the randomness. Can it be applied to search system to avoid "Echo Chamber"?
+
+2. The experiments in the second research shows references only have limited impact and one of the reasons is that those references are seldom clicked. I noticed that such references are given at the end of answer paragraph. So if those reference links are embeded in the paragraph, just around the related content, will it help?
